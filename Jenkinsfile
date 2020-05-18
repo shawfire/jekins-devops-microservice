@@ -1,4 +1,4 @@
-# Declarative
+// Declarative
 pipeline {
 	agent any
 	stages {
