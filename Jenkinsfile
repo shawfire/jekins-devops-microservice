@@ -1,11 +1,21 @@
-node {
-	stage('Build') {
-		echo "Build"
-	}
-	stage('Test') {
-		echo "Test"
-	}
-	stage('Integration Test') {
-		echo "Integration Test"
+# Declarative
+pipeline {
+	agent any
+	stages {
+		stage('Build') {
+			setps {
+				echo "Build"
+			}
+		}
+		stage('Test') {
+			setps {
+				echo "Test"
+			}
+		}
+		stage('Integration Test') {
+			setps {
+				echo "Integration Test"
+			}
+		}		
 	}
 }
